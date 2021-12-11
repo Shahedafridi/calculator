@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="https://kit.fontawesome.com/9e7b740e0f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>CALCULATOR</h2>
+        <div class="result">
+            <input id="input" type="text" placeholder="0">
+        </div>
+        <div class="button-list">
+           <div class="row">
+            <button onclick="addInput(7)">7</button>
+            <button onclick="addInput(8)">8</button>
+            <button onclick="addInput(9)">9</button>
+            <button onclick="addInput('+')">+</button>
+            <button id="delete" onclick="clearChrac()"><i class="fas fa-backspace"></i></button>
+
+           </div>
+           <div class="row">
+            <button onclick="addInput(4)">4</button>
+            <button onclick="addInput(5)">5</button>
+            <button onclick="addInput(6)">6</button>
+            <button onclick="addInput('-')">-</button>
+           </div>
+           <div class="row">
+            <button onclick="addInput(1)">1</button>
+            <button onclick="addInput(2)">2</button>
+            <button onclick="addInput(3)">3</button>
+            <button onclick="addInput('*')">x</button>
+           </div>
+           <div class="row">
+            <button onclick="addInput(0)">0</button>
+            <button onclick="addInput('.')">.</button>
+            <button onclick="addInput('/')">/</button>
+            <button onclick="result()">=</button>
+           </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
